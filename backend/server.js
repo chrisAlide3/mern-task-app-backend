@@ -29,7 +29,10 @@ app.use(express.urlencoded({ extended: false }));
 // Allows access from frontend
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://mern-task-app-jjjt"],
+    origin: [
+      "http://localhost:3000",
+      "https://mern-task-app-jjjt.onrender.com/",
+    ],
   })
 );
 // First argument is the base path of the routes
